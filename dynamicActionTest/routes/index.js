@@ -11,8 +11,8 @@ router.post('/home', function(req, res, next) {
 			"username" : req.body.username,
 			"password" : req.body.password
 		}
-		res.redirect("/test/test1");
-	}if( req.body.username == '2'&& req.body.password == '2'){
+		res.redirect("/test/test");
+	}else if( req.body.username == '2'&& req.body.password == '2'){
 		req.session.user = {
 			"username" : req.body.username,
 			"password" : req.body.password
